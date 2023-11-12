@@ -82,18 +82,18 @@
 
   color-scheme: light;
 
-  --background: var(--background-light)  
-  --on-background: var(--on-background-light)
-  --surface: var(--surface-light)
-  --on-surface: var(--on-surface-light)
-  --on-surface-variant: var(--on-surface-variant-light)
-  --surface-container-low: var(--surface-container-low-light)
-  --surface-container: var(--surface-container-light)
-  --surface-bright: var(--surface-bright-light)
-  --primary: var(--primary-light)
-  --on-primary: var(--on-primary-light)
-  --outline: var(--outline-light)
-  --outline-variant: var(--outline-variant-ligh)
+  --background: var(--background-light);  
+  --on-background: var(--on-background-light);
+  --surface: var(--surface-light);
+  --on-surface: var(--on-surface-light);
+  --on-surface-variant: var(--on-surface-variant-light);
+  --surface-container-low: var(--surface-container-low-light);
+  --surface-container: var(--surface-container-light);
+  --surface-bright: var(--surface-bright-light);
+  --primary: var(--primary-light);
+  --on-primary: var(--on-primary-light);
+  --outline: var(--outline-light);
+  --outline-variant: var(--outline-variant-light);
 
 }
 
@@ -101,18 +101,18 @@
 
   color-scheme: dark;
 
-  --background: var(--background-dark)  
-  --on-background: var(--on-background-dark)
-  --surface: var(--surface-dark)
-  --on-surface: var(--on-surface-dark)
-  --on-surface-variant: var(--on-surface-variant-dark)
-  --surface-container-low: var(--surface-container-low-dark)
-  --surface-container: var(--surface-container-dark)
-  --surface-bright: var(--surface-bright-dark)
-  --primary: var(--primary-dark)
-  --on-primary: var(--on-primary-dark)
-  --outline: var(--outline-dark)
-  --outline-variant: var(--outline-variant-dark)
+  --background: var(--background-dark);  
+  --on-background: var(--on-background-dark);
+  --surface: var(--surface-dark);
+  --on-surface: var(--on-surface-dark);
+  --on-surface-variant: var(--on-surface-variant-dark);
+  --surface-container-low: var(--surface-container-low-dark);
+  --surface-container: var(--surface-container-dark);
+  --surface-bright: var(--surface-bright-dark);
+  --primary: var(--primary-dark);
+  --on-primary: var(--on-primary-dark);
+  --outline: var(--outline-dark);
+  --outline-variant: var(--outline-variant-dark);
 
 }
 
@@ -133,7 +133,7 @@
 /* reset */
 
 *,
-*::before
+*::before,
 *::after {
   margin: 0;
   padding: 0;
@@ -156,7 +156,7 @@ a {
 img { height: auto; }
 
 input,
-button
+button,
 textarea {
   background: none;
   border: none;
@@ -327,6 +327,40 @@ body {
   opacity: 0.12;
 }
 
+.section { padding-block: var(--section-padding);}
+
+.container { padding-inline: 16px; }
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* chip */
+
+.chip {
+  height: 32px;
+  max-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 16px;
+  border: 1px solid var(--outline-light);
+  border-radius: 10px;
+  background-color: var(--surface);
+  color: var(--on-surface-variant);
+  --state-layer-bg: var(--on-surface-variant);
+}
+
+.chip .material-symbols-outlined { font-size: 1.8rem; }
 
 /* buttons */
 
@@ -339,6 +373,37 @@ body {
   border: none;
   height: 40px;
   place-items: center;
+}
+
+/* me */
+
+.my { padding-block-start: calc(--top-bar-height) + 24px; }
+
+.my .container {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+}
+
+.my-banner {
+  width: 240px;
+  border-radius: 100%;
+  z-index: 6;
+}
+
+.my-content { max-width: 500px; }
+
+.my .section-subtitle { color: var(--on-surface-variant); }
+
+.my section-text {
+  margin-block: 5px 16 px;
+  color: var(--on-surface-variant);
+}
+
+.my .btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 /* topbar */
@@ -367,7 +432,35 @@ body {
 [data-theme="dark"] .theme-btn .dark,
 [data-theme="light"] .theme-btn .light { display: none; }
 
+/* about */
+
+.about-card {
+  background-color: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  margin-inline: 16px;
+  padding: 16px;
+  margin-block-start: 24px;
+  border-radius: var(--radius-large);
+}
+
+.about-card .card-title { color: var(--on-surface); }
+
+.about-card .card-text {
+  margin-block: 12px;
+  padding-block: 12px;
+  border-block: 1px solid var(--outline-variant);
+}
+
+.about-list {
+  display: grid;
+  gap: 12px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
 
-
-
+/*** TELEGRAM ICON !! **/
