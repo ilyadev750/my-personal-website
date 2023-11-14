@@ -349,6 +349,8 @@ body {
   object-fit: cover;
 }
 
+.tab-content:not(.active) { display: none; }
+
 /* chip */
 
 .chip {
@@ -518,5 +520,31 @@ body {
 .tab-btn.active .tab-text::after { opacity: 1;}
 
 
+/* projects */
 
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(260px, 1fr));
+  gap: 12px;
+}
+
+/* card */
+
+.card {
+  background-color: var(--surface-container-low);
+  border-radius: 20px;
+  padding: 16px;
+  --state-layer-bg: var(var(--on-surface));
+}
+
+.card-banner { border-radius: 20px; }
+
+.card-content {
+  display: grid;
+  gap: 4px;
+}
+
+.card-subtitle { color: var(--on-surface-variant); }
+
+.card-title { color: var(--on-surface); }
 
