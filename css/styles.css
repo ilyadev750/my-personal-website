@@ -142,6 +142,8 @@
 
 li { list-style: none; }
 
+
+
 a,
 img,
 span,
@@ -354,7 +356,7 @@ body {
 
 .tab-content:not(.active) { display: none; }
 
-.section-title { margin-block-end: 16px; }
+.section-title { margin-block-end: 16px; padding-top: 7px; }
 
 /* chip */
 
@@ -545,7 +547,7 @@ body {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, min-max(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 12px;
 }
 
@@ -567,7 +569,11 @@ body {
   gap: 4px;
 }
 
-.card-subtitle { color: var(--on-surface-variant); }
+.card-subtitle { 
+  color: var(--on-surface-variant); 
+  display: inline;
+  vertical-align: middle;
+}
 
 .card-title { color: var(--on-surface); }
 
@@ -743,3 +749,19 @@ body {
   }
 
 }
+
+.tech-images {
+  display: inline;
+  vertical-align: middle;
+  float: right;
+  padding-left: 10px;
+}
+
+.tech-images-2 {
+  display: inline;
+  vertical-align: middle;
+  float: right;
+  padding-left: 10px;
+  height: 80%;
+}
+

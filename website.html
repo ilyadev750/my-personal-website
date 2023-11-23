@@ -83,9 +83,7 @@
                 <span class="tab-text title-small">Contact</span>
                 <div class="state-layer"></div>
               </button>
-
             </div>
-
             <section class="section tab-content active" data-tab-content="project">
               <div class="container">
                 <div class="project-list">
@@ -94,7 +92,12 @@
                       <img src="./ignore_img/notepad.jpeg" alt="Online-notepad" width="334" height="180" class="img-cover">
                     </figure>
                     <div class="card-content">
-                      <span class="label-large card-subtitle">Web App</span>
+                      <div>
+                        <span class="label-large card-subtitle">Web App (pet-project) </span>
+                        <img src="./ignore_img/css3.svg" class="tech-images">
+                        <img src="./ignore_img/html5.svg" class="tech-images">
+                        <img src="./ignore_img/django.png" class="tech-images">
+                      </div>
                       <h3 class="title-large card-title">Online-notepad</h3>
                     </div>
                   </div>
@@ -103,7 +106,11 @@
                       <img src="./ignore_img/holidays_rus.jpeg" alt="Russian holidays bot" width="334" height="180" class="img-cover">
                     </figure>
                     <div class="card-content">
-                      <span class="label-large card-subtitle">Telegram Bot</span>
+                      <div>
+                        <span class="label-large card-subtitle">Telegram Bot</span>
+                        <img src="./ignore_img/postgresql.svg" class="tech-images">
+                        <img src="./ignore_img/aiogram.svg" class="tech-images-2">
+                      </div>
                       <h3 class="title-large card-title">Russian holidays</h3>
                     </div>
                   </div>
@@ -112,13 +119,16 @@
                       <img src="./ignore_img/airport.jpeg" alt="Russian holidays bot" width="334" height="180" class="img-cover">
                     </figure>
                     <div class="card-content">
-                      <span class="label-large card-subtitle">Web scraper</span>
-                      <h3 class="title-large card-title">Nicola Tesla Airport schedule scraper</h3>
+                      <div>
+                        <span class="label-large card-subtitle">Web scraper (pet-project) </span>
+                        <img src="./ignore_img/selenium.svg" class="tech-images-2">
+                        <img src="./ignore_img/aiogram.svg" class="tech-images-2">
+                      </div>
+                        <h3 class="title-large card-title">Nicola Tesla Airport schedule scraper</h3>
                     </div>
                   </div>
                 </div>
               </div>
-
             </section>
             <section class="section tab-content resume-tab" data-tab-content="resume">
               <div class="container">
@@ -142,7 +152,7 @@
                       <p class="body-large">
                         Bachelor of Electrical Engineering and Power Engineering,
                       </p>
-                      <p class="body-large">
+                      <p class="body-medium">
                         National Research University Moscow Power Engineering Institute  
                       </p>
                       <span class="label-medium card-subtitle">2011-2015</span>
@@ -154,7 +164,7 @@
                       <p class="body-large">
                         Master of Electrical Engineering and Power Engineering,
                       </p>
-                      <p class="body-large">
+                      <p class="body-medium">
                         National Research University Moscow Power Engineering Institute  
                       </p>
                       <span class="label-medium card-subtitle">2015-2017</span>
@@ -166,7 +176,7 @@
                       <p class="body-large">
                         Course Python-developer
                       </p>
-                      <p class="body-large">
+                      <p class="body-medium">
                         Online school skillbox.ru
                       </p>
                       <span class="label-medium card-subtitle">2022</span>
@@ -219,7 +229,7 @@
                   </li>
 
                   <li class="resume-bottom-item">
-                    <img src="./ignore_img/selenium.svg" width="30" height="30" loading="lazy" alt="Selenium" class="icon">
+                    <img src="./ignore_img/selenium.svg" width="40" height="40" loading="lazy" alt="Selenium" class="icon">
                     <span class="label-medium">Selenium</span>
                   </li>
 
@@ -292,11 +302,12 @@
                 </div>
 
                 <div class="contact-form">
-                  <h3 class="large-title">Let's work together!</h3>
-                  <form action="" method="post" class="input-wrapper">
+                  <h3 class="title-large">Let's work together!</h3>
+                  <form action="https://formsubmit.co/petrovich7600@yandex.ru" method="POST" enctype="multipart/form-data" class="input-wrapper">
                     <input type="text" name="name" placeholder="Name*" required class="input-field">
-                    <input type="email" name="name" placeholder="Email*" required class="input-field">
+                    <input type="email" name="email" placeholder="Email*" required class="input-field">
                     <input type="text" name="subject" placeholder="Subject" class="input-field">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/website.html">
                     <textarea name="message" placeholder="Message*" required class="textarea"></textarea>
                     <button class="btn" type="submit">
                       <span class="label-large">Send message</span>
