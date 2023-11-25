@@ -432,6 +432,7 @@ body {
 }
 
 .my .btn-wrapper {
+  padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -750,36 +751,10 @@ body {
 
 }
 
-.tech-images {
-  display: inline;
-  vertical-align: middle;
-  float: right;
-  padding-left: 10px;
-  align-items: center;
-}
-
-.tech-images-2 {
-  display: inline;
-  vertical-align: middle;
-  float: right;
-  padding-left: 10px;
-  height: 80%;
-  align-items: center;
-}
-
-/* .icons-block {
-  display: grid; */
-  /* grid-template-columns: 1fr 1fr 40px 40px 40px; */
-  /* grid-template-columns: 100px 50px 1fr 40px 1fr; */
-  /* grid-template-columns: 100px 50px 40px 40px 40px; */
-  /* grid-template-columns: 1fr repeat(auto-fit, minmax(40px, 60px)); */
-  /* grid-template-columns: 1fr repeat(auto-fit, minmax(40px, 1fr));
-  gap: 5px;
-} */
-
 .icons-block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
 }
 
 .text-inside-icons-block {
@@ -792,7 +767,6 @@ body {
 
 .inside-icons-block {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 7px;
   justify-content: flex-end;
